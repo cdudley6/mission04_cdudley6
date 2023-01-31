@@ -1,0 +1,41 @@
+﻿body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 40rem;
+    align-self: center;
+}
+label {
+    font-size: 20px;
+    color: deepskyblue;
+}
+
+textarea {
+    font-size: 22px;
+}
+form {
+    width: 100%;
+    border: 1px solid #d4d4d491;
+    outline: none;
+    padding: 6px 10px;
+    font-weight: 600;
+    font-size: 13px;
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-field {
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+}
