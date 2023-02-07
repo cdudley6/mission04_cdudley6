@@ -3,25 +3,26 @@
 *@
 @{
 }
-
+@model GradeCalculatorModel;
 <h2>Grade Calculator</h2>
 
 <!-- for that has different classes and id's. The classes are for CSS purposes, the id's are for javascript purposes to get the calculations done -->
-<form class="form-container">
+<form method="post" class="form-container">
     <p>(All scores are your % out of 100)</p>
     <label>Assignments Score:</label>
-    <input class="input-field" id="txtAssignments" /><br />
+    <input class="input-field" id="txtAssignments" asp-for="Assignments" /><br />
     <label>Group Projects Score:</label>
-    <input class="input-field" id="txtGrpProj" /><br />
+    <input class="input-field" id="txtGrpProj" asp-for="Project" /><br />
     <label>Quizzes Score:</label>
-    <input class="input-field" id="txtQuizzes" /><br />
+    <input class="input-field" id="txtQuizzes" asp-for="Quizzes" /><br />
     <label>Midterm Score:</label>
-    <input class="input-field" id="txtMidterm" /><br />
+    <input class="input-field" id="txtMidterm" asp-for="Midterm" /><br />
     <label>Final Exam Score:</label>
-    <input class="input-field" id="txtFinal" /><br />
+    <input class="input-field" id="txtFinal" asp-for="Final" /><br />
     <label>INTEX Score:</label>
-    <input class="input-field" id="txtIntex" /><br />
-    <input id="btnSend" type="button" value="Calculate" />
+    <input class="input-field" id="txtIntex" asp-for="Intex" /><br />
+    <input id="btnSend" type="submit" value="Calculate" />
+    <div asp-validation-summary="All"></div>
 </form>
 <!-- pulls the result from the javascript calculation and prints it on the page -->
 <div id="result"></div>

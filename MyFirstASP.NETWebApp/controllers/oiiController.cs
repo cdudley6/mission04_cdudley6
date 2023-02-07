@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyFirstASP.NETWebApp.models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,18 @@ namespace MyFirstASP.NETWebApp.controllers
         {
             return View();
         }
+        [HttpGet]
         public IActionResult GradeCalculator()
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult GradeCalculator(GradeCalculatorModel model)
+        {
+            return View();
+        }
+
+
     }
 }

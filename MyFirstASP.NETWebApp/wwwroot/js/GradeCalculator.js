@@ -61,5 +61,5 @@ $("#btnSend").click(function () {
         letterGrade = "E";
     }
     //helping us print out the result on the html instead of using an alert.
-    $("#result").html("<br> Final Percentage: " + grade + "%, Letter Grade: " + letterGrade);
+    $("#result").html("<br> Final Percentage: " + grade + "%, Letter Grade: " + letterGrade); return false;
 });
