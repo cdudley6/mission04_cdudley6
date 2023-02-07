@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Grade Calculator</h2>
+
+<!-- for that has different classes and id's. The classes are for CSS purposes, the id's are for javascript purposes to get the calculations done -->
+<form class="form-container">
+    <p>(All scores are your % out of 100)</p>
+    <label>Assignments Score:</label>
+    <input class="input-field" id="txtAssignments" /><br />
+    <label>Group Projects Score:</label>
+    <input class="input-field" id="txtGrpProj" /><br />
+    <label>Quizzes Score:</label>
+    <input class="input-field" id="txtQuizzes" /><br />
+    <label>Midterm Score:</label>
+    <input class="input-field" id="txtMidterm" /><br />
+    <label>Final Exam Score:</label>
+    <input class="input-field" id="txtFinal" /><br />
+    <label>INTEX Score:</label>
+    <input class="input-field" id="txtIntex" /><br />
+    <input id="btnSend" type="button" value="Calculate" />
+</form>
+<!-- pulls the result from the javascript calculation and prints it on the page -->
+<div id="result"></div>
+<br />
+<br />
+
+
+<script src="js/GradeCalculator.js"></script>

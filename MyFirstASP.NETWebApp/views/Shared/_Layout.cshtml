@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/my.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav>
+        <a asp-controller="oii" asp-action="Index">Home</a>
+        <a asp-controller="oii" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>This is a footer</footer>
+
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+</body>
+</html>
